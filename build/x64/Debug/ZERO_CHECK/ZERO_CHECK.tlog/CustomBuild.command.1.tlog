@@ -1,0 +1,10 @@
+^C:\USERS\ERMEG\DESKTOP\PROGETTI PERSONALI\SNAKE\BUILD\CMAKEFILES\35882E1FAA4A78E93E1D232C094F7332\GENERATE.STAMP.RULE
+setlocal
+C:\Users\ermeg\AppData\Local\Microsoft\WinGet\Packages\Kitware.CMake_Microsoft.Winget.Source_8wekyb3d8bbwe\cmake-4.4.4-windows-x86_64\bin\cmake.exe "-SC:/Users/ermeg/Desktop/Progetti Personali/Snake" "-BC:/Users/ermeg/Desktop/Progetti Personali/Snake/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/ermeg/Desktop/Progetti Personali/Snake/build/Snake.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
