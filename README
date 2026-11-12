@@ -1,0 +1,43 @@
+# Snake
+
+Un semplice gioco Snake realizzato in C++ con SFML 3.
+
+## Requisiti
+
+- CMake 3.22 o superiore
+- Un compilatore compatibile con C++17
+- SFML 3 con il componente Graphics
+
+## Compilazione
+
+Dalla cartella principale del progetto:
+
+```powershell
+cmake -S . -B build
+cmake --build build --config Release
+```
+
+Se CMake non trova SFML, aggiorna `CMAKE_PREFIX_PATH` in `CMakeLists.txt` indicando la cartella in cui è installato.
+
+## Avvio
+
+Prima di tutto in **CMAKELists.txt** modifica il path per chiamare SMFL nel tuo path.
+
+Dopo, con il generatore Visual Studio, l'eseguibile si trova in genere in:
+
+```powershell
+.\build\Release\Snake.exe
+```
+
+Con altri generatori, il percorso può essere diverso.
+
+## Comandi
+
+- **Invio**: avvia una partita o ne inizia una nuova dopo una collisione.
+- **Frecce direzionali**: cambiano la direzione del serpente.
+
+## Regole
+
+- Mangia le mele per ottenere 10 punti ciascuna.
+- Evita i bordi e il corpo del serpente.
+- La partita termina in caso di collisione.

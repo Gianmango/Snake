@@ -127,6 +127,10 @@
       <Command>setlocal
 C:\Users\ermeg\AppData\Local\Microsoft\WinGet\Packages\Kitware.CMake_Microsoft.Winget.Source_8wekyb3d8bbwe\cmake-4.4.4-windows-x86_64\bin\cmake.exe -E copy_if_different C:/Users/ermeg/AppData/Local/Programs/SFML/bin/sfml-graphics-d-3.dll C:/Users/ermeg/AppData/Local/Programs/SFML/bin/sfml-window-d-3.dll C:/Users/ermeg/AppData/Local/Programs/SFML/bin/sfml-system-d-3.dll "C:/Users/ermeg/Desktop/Progetti Personali/Snake/build/Debug"
 if %errorlevel% neq 0 goto :cmEnd
+C:\Users\ermeg\AppData\Local\Microsoft\WinGet\Packages\Kitware.CMake_Microsoft.Winget.Source_8wekyb3d8bbwe\cmake-4.4.4-windows-x86_64\bin\cmake.exe -E make_directory "C:/Users/ermeg/Desktop/Progetti Personali/Snake/build/Debug/assets"
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\ermeg\AppData\Local\Microsoft\WinGet\Packages\Kitware.CMake_Microsoft.Winget.Source_8wekyb3d8bbwe\cmake-4.4.4-windows-x86_64\bin\cmake.exe -E copy_if_different "C:/Users/ermeg/Desktop/Progetti Personali/Snake/src/assets/ARIAL.TTF" "C:/Users/ermeg/Desktop/Progetti Personali/Snake/build/Debug/assets/ARIAL.TTF"
+if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 :cmErrorLevel
@@ -195,6 +199,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message></Message>
       <Command>setlocal
 C:\Users\ermeg\AppData\Local\Microsoft\WinGet\Packages\Kitware.CMake_Microsoft.Winget.Source_8wekyb3d8bbwe\cmake-4.4.4-windows-x86_64\bin\cmake.exe -E copy_if_different C:/Users/ermeg/AppData/Local/Programs/SFML/bin/sfml-graphics-3.dll C:/Users/ermeg/AppData/Local/Programs/SFML/bin/sfml-window-3.dll C:/Users/ermeg/AppData/Local/Programs/SFML/bin/sfml-system-3.dll "C:/Users/ermeg/Desktop/Progetti Personali/Snake/build/Release"
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\ermeg\AppData\Local\Microsoft\WinGet\Packages\Kitware.CMake_Microsoft.Winget.Source_8wekyb3d8bbwe\cmake-4.4.4-windows-x86_64\bin\cmake.exe -E make_directory "C:/Users/ermeg/Desktop/Progetti Personali/Snake/build/Release/assets"
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\ermeg\AppData\Local\Microsoft\WinGet\Packages\Kitware.CMake_Microsoft.Winget.Source_8wekyb3d8bbwe\cmake-4.4.4-windows-x86_64\bin\cmake.exe -E copy_if_different "C:/Users/ermeg/Desktop/Progetti Personali/Snake/src/assets/ARIAL.TTF" "C:/Users/ermeg/Desktop/Progetti Personali/Snake/build/Release/assets/ARIAL.TTF"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -265,6 +273,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command>setlocal
 C:\Users\ermeg\AppData\Local\Microsoft\WinGet\Packages\Kitware.CMake_Microsoft.Winget.Source_8wekyb3d8bbwe\cmake-4.4.4-windows-x86_64\bin\cmake.exe -E copy_if_different C:/Users/ermeg/AppData/Local/Programs/SFML/bin/sfml-graphics-d-3.dll C:/Users/ermeg/AppData/Local/Programs/SFML/bin/sfml-window-d-3.dll C:/Users/ermeg/AppData/Local/Programs/SFML/bin/sfml-system-d-3.dll "C:/Users/ermeg/Desktop/Progetti Personali/Snake/build/MinSizeRel"
 if %errorlevel% neq 0 goto :cmEnd
+C:\Users\ermeg\AppData\Local\Microsoft\WinGet\Packages\Kitware.CMake_Microsoft.Winget.Source_8wekyb3d8bbwe\cmake-4.4.4-windows-x86_64\bin\cmake.exe -E make_directory "C:/Users/ermeg/Desktop/Progetti Personali/Snake/build/MinSizeRel/assets"
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\ermeg\AppData\Local\Microsoft\WinGet\Packages\Kitware.CMake_Microsoft.Winget.Source_8wekyb3d8bbwe\cmake-4.4.4-windows-x86_64\bin\cmake.exe -E copy_if_different "C:/Users/ermeg/Desktop/Progetti Personali/Snake/src/assets/ARIAL.TTF" "C:/Users/ermeg/Desktop/Progetti Personali/Snake/build/MinSizeRel/assets/ARIAL.TTF"
+if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 :cmErrorLevel
@@ -332,6 +344,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message></Message>
       <Command>setlocal
 C:\Users\ermeg\AppData\Local\Microsoft\WinGet\Packages\Kitware.CMake_Microsoft.Winget.Source_8wekyb3d8bbwe\cmake-4.4.4-windows-x86_64\bin\cmake.exe -E copy_if_different C:/Users/ermeg/AppData/Local/Programs/SFML/bin/sfml-graphics-d-3.dll C:/Users/ermeg/AppData/Local/Programs/SFML/bin/sfml-window-d-3.dll C:/Users/ermeg/AppData/Local/Programs/SFML/bin/sfml-system-d-3.dll "C:/Users/ermeg/Desktop/Progetti Personali/Snake/build/RelWithDebInfo"
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\ermeg\AppData\Local\Microsoft\WinGet\Packages\Kitware.CMake_Microsoft.Winget.Source_8wekyb3d8bbwe\cmake-4.4.4-windows-x86_64\bin\cmake.exe -E make_directory "C:/Users/ermeg/Desktop/Progetti Personali/Snake/build/RelWithDebInfo/assets"
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\ermeg\AppData\Local\Microsoft\WinGet\Packages\Kitware.CMake_Microsoft.Winget.Source_8wekyb3d8bbwe\cmake-4.4.4-windows-x86_64\bin\cmake.exe -E copy_if_different "C:/Users/ermeg/Desktop/Progetti Personali/Snake/src/assets/ARIAL.TTF" "C:/Users/ermeg/Desktop/Progetti Personali/Snake/build/RelWithDebInfo/assets/ARIAL.TTF"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
